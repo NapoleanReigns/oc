@@ -17,7 +17,7 @@ describe('utils : require-template', () => {
 
     scenarios.forEach(scenario => {
       it(scenario.name, () => {
-        const template = requireTemplate(scenario.name);
+        const template = requireTemplate(scenario.name, { compiler: true });
 
         [
           'compile',
