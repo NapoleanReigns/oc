@@ -110,7 +110,7 @@ module.exports = {
         'Looks  like you are trying to use a plugin in the dev mode ({0}).\nYou need to mock it doing {1}',
       PLUGIN_MISSING_FROM_COMPONENT:
         "Looks like you are trying to use a plugin you haven't registered ({0})." +
-          "\nYou need to register it editing your component's package.json",
+        "\nYou need to register it editing your component's package.json",
       PORT_IS_BUSY:
         'The port {0} is already in use. Specify the optional port parameter to use another port.',
       PUBLISHING_FAIL: 'An error happened when publishing the component: {0}',
@@ -122,7 +122,7 @@ module.exports = {
       TEMPLATE_TYPE_NOT_VALID:
         'the template is not valid. Allowed values are handlebars and jade',
       TEMPLATE_DEP_MISSING:
-        'Template dependency missing. Run "$npm install --save {0}" to fix it.'
+        'Template dependency missing. To fix it run:\n\ncd {0} && npm install --save-dev {1}-compiler\n\n'
     },
     generic: 'An error occurred: {0}',
     s3: {
